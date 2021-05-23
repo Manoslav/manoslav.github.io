@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anti-stresové e-stránky</title>
+    <link rel="icon" href="/Random/img/6-62264_open-eye-crying-laughing-emoji-png-open-eye.png" type="image/icon type">
+    <link rel="stylesheet" href="/Random/styles.css">
+</head>
+<body>
+    <h1 class="nadpis">Anti-stresové e-stránky</h1>
+    <button type ="button" onclick="displayImage()">GENEROVAT VTIP</button>
+    <div id="pic"></div>
+</body>
+</html>
+<script>
+var mouse = "<img src = 'https://i.redd.it/pic9jtpsbx071.jpg'>";
+var dog = "<img src = 'https://preview.redd.it/siifawh6ix071.jpg?width=750&format=pjpg&auto=webp&s=aeb3b20a78025d3d3715b69deeadddedf506f93d'>";
+var mamut = "<img src = 'https://preview.redd.it/led2u817ix071.jpg?width=750&format=pjpg&auto=webp&s=def68b67fb96ad091e79503979254ec6175415e6'>";
+var sheep = "<img src = 'https://preview.redd.it/85cne538ix071.jpg?width=750&format=pjpg&auto=webp&s=a441b352f4c8a7d519c41af0baf466e130150281'>";
+var images = [mouse, dog, mamut, sheep]
+var names = ["Myš", "Pes", "Mamut", "Ovce"]
+function displayImage(){
+  var rn = Math.random();
+  rn = rn*4;
+  rn = Math.floor(rn);
+  document.getElementById("pic").innerHTML=images[rn];
+  document.getElementById("name").innerHTML=names[rn];
+}
+</script>
